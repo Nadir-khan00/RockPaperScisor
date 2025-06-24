@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1 {
+  height: 5rem;
+  background-color: #081b31;
+  color: white;
+  line-height: 5rem;
+  margin: 0 10rem 0 10rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 3rem;
+}
+.choice {
+  height: 165px;
+  width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.choice:hover {
+  cursor: pointer;
+  background-color: #081b31;
+}
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.score-bord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: white;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+button {
+  background-color: #081b31;
+  color: white;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+@keyframes colorFlow {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+.color-flow {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  animation: colorFlow 3s infinite linear;
+}
+h1,
+button:hover {
+  cursor: pointer;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  h1 {
+    margin: 0 5rem;
+    font-size: 2rem;
+  }
+
+  .choices {
+    gap: 2rem;
+  }
+
+  .choice {
+    width: 130px;
+    height: 130px;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .score-bord {
+    gap: 3rem;
+    font-size: 1.5rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 3rem;
+  }
+
+  #msg,
+  button {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin: 0 2rem;
+    font-size: 1.7rem;
+    height: auto;
+    line-height: normal;
+    padding: 1rem;
+  }
+
+  .choices {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .choice {
+    width: 110px;
+    height: 110px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .score-bord {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .score {
+    margin-bottom: 1rem;
+  }
+
+  #msg,
+  button {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+
+  .msg-container {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .choice {
+    width: 90px;
+    height: 90px;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1.color-flow {
+    font-size: 1.5rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 2.5rem;
+  }
+
+  #msg,
+  button {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  button {
+    width: 90%;
+    max-width: 300px;
+  }
+}
